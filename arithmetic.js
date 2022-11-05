@@ -8,6 +8,10 @@ function checkInput() {
     } else if (isNaN(input2.value)) {
         document.getElementById("noti2").innerHTML =
             "Giá trị nhập ở ô Số thứ hai không phải là số!";
+    }
+    else if (isNaN(input1.value) && isNaN(input2.value)) {
+        document.getElementById("noti2").innerHTML =
+            "Giá trị nhập ở cả 2 ô không phải là số!";
     } else if (input1.value == "" || input2.value == "") {
         document.getElementById("noti2").innerHTML = "Vui lòng nhập số!";
     } else if (
